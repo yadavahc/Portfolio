@@ -15,21 +15,21 @@ export default function AdditionalSections() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-              <span className="bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center">
+              <span className="text-shine bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
                 Education
               </span>
             </h2>
 
             <div className="space-y-8">
-              <div className="bg-[#1a1a2e] rounded-lg p-6 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors">
-                <div className="flex items-start gap-4">
-                  <FaGraduationCap className="text-3xl text-[#00d9ff] mt-1" />
+              <div className="group bg-[#1a1a2e] rounded-lg p-5 sm:p-6 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <FaGraduationCap className="text-2xl sm:text-3xl text-[#c0c0c0] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-bold text-[#00d9ff] mb-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-shine text-white mb-1 group-hover:text-[#e8e8e8] transition-colors">
                       B.E. in Information Science
                     </h3>
-                    <p className="text-lg text-gray-200 mb-2">
+                    <p className="text-base sm:text-lg text-gray-200 mb-2">
                       The Oxford College of Engineering, Bengaluru
                     </p>
                     <p className="text-gray-400 mb-2">2023 – 2027</p>
@@ -38,14 +38,14 @@ export default function AdditionalSections() {
                 </div>
               </div>
 
-              <div className="bg-[#1a1a2e] rounded-lg p-6 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors">
-                <div className="flex items-start gap-4">
-                  <FaGraduationCap className="text-3xl text-[#00d9ff] mt-1" />
+              <div className="group bg-[#1a1a2e] rounded-lg p-5 sm:p-6 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <FaGraduationCap className="text-2xl sm:text-3xl text-[#c0c0c0] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-bold text-[#00d9ff] mb-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-shine text-white mb-1 group-hover:text-[#e8e8e8] transition-colors">
                       PUC (CS)
                     </h3>
-                    <p className="text-lg text-gray-200 mb-2">
+                    <p className="text-base sm:text-lg text-gray-200 mb-2">
                       Kumarans PU College
                     </p>
                     <p className="text-gray-400 mb-2">2021 – 2023</p>
@@ -54,14 +54,14 @@ export default function AdditionalSections() {
                 </div>
               </div>
 
-              <div className="bg-[#1a1a2e] rounded-lg p-6 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors">
-                <div className="flex items-start gap-4">
-                  <FaGraduationCap className="text-3xl text-[#00d9ff] mt-1" />
+              <div className="group bg-[#1a1a2e] rounded-lg p-5 sm:p-6 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <FaGraduationCap className="text-2xl sm:text-3xl text-[#c0c0c0] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-xl font-bold text-[#00d9ff] mb-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-shine text-white mb-1 group-hover:text-[#e8e8e8] transition-colors">
                       High School
                     </h3>
-                    <p className="text-lg text-gray-200 mb-2">MMVS High School</p>
+                    <p className="text-base sm:text-lg text-gray-200 mb-2">MMVS High School</p>
                     <p className="text-gray-400 mb-2">2011 – 2020</p>
                     <p className="text-gray-300 mb-2">97.12%</p>
                     <ul className="text-gray-300 space-y-1 text-sm">
@@ -97,7 +97,7 @@ export default function AdditionalSections() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Certifications */}
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-[#00d9ff] flex items-center gap-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-shine text-white flex items-center gap-2">
                   <FaAward />
                   Certifications
                 </h3>
@@ -112,9 +112,9 @@ export default function AdditionalSections() {
                   ].map((cert, index) => (
                     <div
                       key={index}
-                      className="bg-[#1a1a2e] rounded-lg p-4 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors"
+                      className="group bg-[#1a1a2e] rounded-lg p-4 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300"
                     >
-                      <p className="text-gray-300">{cert}</p>
+                      <p className="text-sm sm:text-base text-gray-300 group-hover:text-gray-200 transition-colors">{cert}</p>
                     </div>
                   ))}
                 </div>
@@ -122,7 +122,7 @@ export default function AdditionalSections() {
 
               {/* Achievements */}
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-[#00d9ff] flex items-center gap-2">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-shine text-white flex items-center gap-2">
                   <FaAward />
                   Achievements
                 </h3>
@@ -136,7 +136,7 @@ export default function AdditionalSections() {
                   ].map((achievement, index) => (
                     <div
                       key={index}
-                      className="bg-[#1a1a2e] rounded-lg p-4 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors"
+                      className="group bg-[#1a1a2e] rounded-lg p-4 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300"
                     >
                       <p className="text-gray-300">{achievement}</p>
                     </div>
@@ -192,15 +192,15 @@ export default function AdditionalSections() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="bg-[#1a1a2e] rounded-lg p-6 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors"
+                  className="group bg-[#1a1a2e] rounded-lg p-5 sm:p-6 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300"
                 >
-                  <div className="flex items-start gap-4">
-                    <FaUsers className="text-2xl text-[#00d9ff] mt-1" />
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <FaUsers className="text-xl sm:text-2xl text-[#c0c0c0] mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-bold text-[#00d9ff] mb-2">
+                      <h3 className="text-base sm:text-lg font-bold text-shine text-white mb-2 group-hover:text-[#e8e8e8] transition-colors">
                         {item.title}
                       </h3>
-                      <p className="text-gray-300">{item.description}</p>
+                      <p className="text-sm sm:text-base text-gray-300 group-hover:text-gray-200 transition-colors">{item.description}</p>
                     </div>
                   </div>
                 </motion.div>

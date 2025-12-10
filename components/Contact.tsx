@@ -68,39 +68,39 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] bg-clip-text text-transparent">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center">
+            <span className="text-shine bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
               Get In Touch
             </span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
             {/* Contact Info */}
             <div>
-              <p className="text-gray-300 mb-8 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                 I'm always open to discussing new opportunities, interesting
                 projects, or just having a chat. Feel free to reach out!
               </p>
 
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-4 text-gray-300">
-                  <FaMapMarkerAlt className="text-[#00d9ff] text-xl" />
+              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                <div className="flex items-center gap-3 sm:gap-4 text-sm sm:text-base text-gray-300">
+                  <FaMapMarkerAlt className="text-[#c0c0c0] text-lg sm:text-xl flex-shrink-0" />
                   <span>Bengaluru, Karnataka, India</span>
                 </div>
-                <div className="flex items-center gap-4 text-gray-300">
-                  <FaEnvelope className="text-[#00d9ff] text-xl" />
+                <div className="flex items-center gap-3 sm:gap-4 text-sm sm:text-base text-gray-300">
+                  <FaEnvelope className="text-[#c0c0c0] text-lg sm:text-xl flex-shrink-0" />
                   <a
                     href="mailto:yadavahc333@gmail.com"
-                    className="hover:text-[#00d9ff] transition-colors"
+                    className="hover:text-white transition-colors break-all"
                   >
                     yadavahc333@gmail.com
                   </a>
                 </div>
-                <div className="flex items-center gap-4 text-gray-300">
-                  <FaPhone className="text-[#00d9ff] text-xl" />
+                <div className="flex items-center gap-3 sm:gap-4 text-sm sm:text-base text-gray-300">
+                  <FaPhone className="text-[#c0c0c0] text-lg sm:text-xl flex-shrink-0" />
                   <a
                     href="tel:+918904030441"
-                    className="hover:text-[#00d9ff] transition-colors"
+                    className="hover:text-white transition-colors"
                   >
                     +91 8904030441
                   </a>
@@ -145,7 +145,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-[#1a1a2e] border border-[#2a2a3e] rounded-lg text-gray-300 focus:outline-none focus:border-[#00d9ff] transition-colors"
+                    className="w-full px-4 py-3 bg-[#1a1a2e] border border-[#2a2a3e] rounded-lg text-gray-300 focus:outline-none focus:border-[#c0c0c0] transition-colors text-sm sm:text-base"
                     placeholder="Your Name"
                   />
                 </div>
@@ -164,7 +164,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-[#1a1a2e] border border-[#2a2a3e] rounded-lg text-gray-300 focus:outline-none focus:border-[#00d9ff] transition-colors"
+                    className="w-full px-4 py-3 bg-[#1a1a2e] border border-[#2a2a3e] rounded-lg text-gray-300 focus:outline-none focus:border-[#c0c0c0] transition-colors text-sm sm:text-base"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -190,7 +190,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#00d9ff]/50 transition-all duration-300"
+                  className="w-full px-6 py-3 bg-gradient-to-r from-[#c0c0c0] to-[#e8e8e8] text-[#0a0a0f] font-semibold rounded-lg hover:from-[#e8e8e8] hover:to-white hover:shadow-lg hover:shadow-[#c0c0c0]/30 transition-all duration-300 text-sm sm:text-base"
                 >
                   Send Message
                 </button>
@@ -201,10 +201,10 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-20 pt-8 border-t border-[#1a1a2e] text-center text-gray-400">
+      <footer className="mt-12 sm:mt-20 pt-6 sm:pt-8 border-t border-[#1a1a2e] text-center text-sm sm:text-base text-gray-400">
         <p>
           © {new Date().getFullYear()} Built by{" "}
-          <span className="text-[#00d9ff]">Yadava HC</span>
+          <span className="text-shine text-white">Yadava HC</span>
         </p>
       </footer>
     </section>

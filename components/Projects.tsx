@@ -58,7 +58,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0f]"
+      className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#0a0a0f]"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div
@@ -67,13 +67,13 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] bg-clip-text text-transparent">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center">
+            <span className="text-shine bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -81,33 +81,33 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-[#1a1a2e] rounded-lg p-6 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[#00d9ff]/10"
+                className="group bg-[#1a1a2e] rounded-lg p-5 sm:p-6 border border-[#2a2a3e] hover:border-[#c0c0c0] transition-all duration-300 hover:shadow-xl hover:shadow-[#c0c0c0]/20 hover:bg-[#1f1f2e]"
               >
-                <h3 className="text-xl font-bold text-[#00d9ff] mb-3">
+                <h3 className="text-lg sm:text-xl font-bold text-shine mb-3 text-white group-hover:text-[#e8e8e8] transition-colors">
                   {project.name}
                 </h3>
-                <p className="text-gray-300 mb-4 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-5 sm:mb-6">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs bg-[#0a0a0f] border border-[#2a2a3e] rounded-full text-gray-400"
+                      className="px-2 sm:px-3 py-1 text-xs bg-[#0a0a0f] border border-[#2a2a3e] rounded-full text-gray-400 hover:border-[#c0c0c0] hover:text-[#e8e8e8] transition-all duration-300"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] text-white rounded-lg hover:shadow-lg hover:shadow-[#00d9ff]/50 transition-all duration-300 text-sm font-medium"
+                      className="flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-[#c0c0c0] to-[#e8e8e8] text-[#0a0a0f] rounded-lg hover:from-[#e8e8e8] hover:to-white hover:shadow-lg hover:shadow-[#c0c0c0]/30 transition-all duration-300 text-sm font-medium"
                     >
                       <FaExternalLinkAlt />
                       Live Demo
@@ -118,7 +118,7 @@ export default function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-[#0a0a0f] border border-[#2a2a3e] text-gray-300 rounded-lg hover:border-[#00d9ff] hover:text-[#00d9ff] transition-all duration-300 text-sm font-medium"
+                      className="flex items-center justify-center gap-2 px-4 py-2 bg-[#0a0a0f] border border-[#2a2a3e] text-gray-300 rounded-lg hover:border-[#c0c0c0] hover:text-white hover:bg-[#1a1a2e] transition-all duration-300 text-sm font-medium"
                     >
                       <FaGithub />
                       Source Code

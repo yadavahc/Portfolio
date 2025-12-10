@@ -112,8 +112,8 @@ export default function Experience() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] bg-clip-text text-transparent">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center">
+            <span className="text-shine bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
               Experience
             </span>
           </h2>
@@ -122,7 +122,7 @@ export default function Experience() {
             {/* Timeline line */}
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#1a1a2e] transform md:-translate-x-1/2"></div>
 
-            <div className="space-y-12">
+            <div className="space-y-8 sm:space-y-12">
               {experiences.map((exp, index) => (
                 <motion.div
                   key={index}
@@ -135,35 +135,35 @@ export default function Experience() {
                   }`}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-[#00d9ff] rounded-full border-4 border-[#050509] transform md:-translate-x-1/2 z-10"></div>
+                  <div className="absolute left-4 md:left-1/2 w-3 h-3 sm:w-4 sm:h-4 bg-[#c0c0c0] rounded-full border-4 border-[#050509] transform md:-translate-x-1/2 z-10"></div>
 
                   <div
                     className={`w-full md:w-1/2 ${
-                      index % 2 === 0 ? "md:pr-12 pl-12" : "md:pl-12 pr-12"
+                      index % 2 === 0 ? "md:pr-8 md:pl-12 pl-12" : "md:pl-8 md:pr-12 pr-12"
                     }`}
                   >
-                    <div className="bg-[#1a1a2e] rounded-lg p-6 border border-[#2a2a3e] hover:border-[#00d9ff]/50 transition-colors">
-                      <div className="flex items-start justify-between mb-4">
-                        <div>
-                          <h3 className="text-xl font-bold text-[#00d9ff] mb-1">
+                    <div className="group bg-[#1a1a2e] rounded-lg p-5 sm:p-6 border border-[#2a2a3e] hover:border-[#c0c0c0] hover:bg-[#1f1f2e] transition-all duration-300">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-2">
+                        <div className="flex-1">
+                          <h3 className="text-lg sm:text-xl font-bold text-shine text-white mb-1 group-hover:text-[#e8e8e8] transition-colors">
                             {exp.role}
                           </h3>
-                          <p className="text-lg text-gray-200 mb-2">
+                          <p className="text-base sm:text-lg text-gray-200 mb-2">
                             {exp.organization}
                           </p>
                         </div>
-                        <span className="px-3 py-1 text-xs bg-[#0a0a0f] border border-[#2a2a3e] rounded-full text-gray-400">
+                        <span className="px-2 sm:px-3 py-1 text-xs bg-[#0a0a0f] border border-[#2a2a3e] rounded-full text-gray-400 self-start">
                           {exp.type}
                         </span>
                       </div>
 
-                      <div className="flex flex-wrap items-center gap-4 mb-4 text-sm text-gray-400">
+                      <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 mb-4 text-xs sm:text-sm text-gray-400">
                         <div className="flex items-center gap-2">
-                          <FaCalendarAlt className="text-[#00d9ff]" />
+                          <FaCalendarAlt className="text-[#c0c0c0]" />
                           <span>{exp.duration}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <FaMapMarkerAlt className="text-[#00d9ff]" />
+                          <FaMapMarkerAlt className="text-[#c0c0c0]" />
                           <span>{exp.location}</span>
                         </div>
                       </div>
@@ -172,9 +172,9 @@ export default function Experience() {
                         {exp.points.map((point, idx) => (
                           <li
                             key={idx}
-                            className="text-gray-300 flex items-start gap-2"
+                            className="text-sm sm:text-base text-gray-300 flex items-start gap-2"
                           >
-                            <span className="text-[#00d9ff] mt-1.5">•</span>
+                            <span className="text-[#c0c0c0] mt-1.5">•</span>
                             <span>{point}</span>
                           </li>
                         ))}

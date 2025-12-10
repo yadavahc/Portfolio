@@ -61,7 +61,7 @@ export default function Navbar() {
                     e.preventDefault();
                     handleNavClick("#home");
                   }}
-              className="text-xl font-bold bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] bg-clip-text text-transparent"
+              className="text-lg sm:text-xl font-bold text-shine bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent"
             >
               Yadava HC
             </a>
@@ -82,14 +82,14 @@ export default function Navbar() {
                   }}
                   className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? "text-[#00d9ff]"
-                      : "text-gray-300 hover:text-[#00d9ff]"
+                      ? "text-white"
+                      : "text-gray-300 hover:text-white"
                   }`}
                 >
                   {item.name}
                   {isActive && (
                     <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00d9ff]"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#c0c0c0] to-[#e8e8e8]"
                       layoutId="activeSection"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
@@ -101,7 +101,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-300 hover:text-[#00d9ff] transition-colors"
+            className="md:hidden text-gray-300 hover:text-white transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -134,8 +134,8 @@ export default function Navbar() {
                   }}
                   className={`block px-4 py-2 rounded-lg text-base font-medium transition-colors ${
                     isActive
-                      ? "text-[#00d9ff] bg-[#1a1a2e]"
-                      : "text-gray-300 hover:text-[#00d9ff] hover:bg-[#1a1a2e]"
+                      ? "text-white bg-[#1a1a2e]"
+                      : "text-gray-300 hover:text-white hover:bg-[#1a1a2e]"
                   }`}
                 >
                   {item.name}

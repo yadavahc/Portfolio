@@ -15,7 +15,7 @@ const socialLinks = [
     name: "LinkedIn",
     icon: FaLinkedin,
     href: "https://linkedin.com/in/yadava-hc",
-    color: "hover:text-[#0077b5]",
+    color: "hover:text-white",
   },
   {
     name: "GitHub",
@@ -27,7 +27,7 @@ const socialLinks = [
     name: "LeetCode",
     icon: SiLeetcode,
     href: "https://leetcode.com/yadavahc",
-    color: "hover:text-[#ffa116]",
+    color: "hover:text-white",
   },
 ];
 
@@ -43,38 +43,38 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6">
+            <span className="text-shine bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
               Yadava HC
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-3 sm:mb-4 px-4">
             Aspiring Software Engineer | Web Development | React | Java & C++ |
             DSA
           </p>
-          <p className="text-base sm:text-lg text-gray-400 mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 px-4">
             Operating Systems | AI/ML Enthusiast | React Developer
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 text-gray-300">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 text-gray-300 text-sm sm:text-base px-4">
             <div className="flex items-center gap-2">
-              <FaMapMarkerAlt className="text-[#00d9ff]" />
+              <FaMapMarkerAlt className="text-[#c0c0c0]" />
               <span>Bengaluru, Karnataka, India</span>
             </div>
             <div className="flex items-center gap-2">
-              <FaEnvelope className="text-[#00d9ff]" />
+              <FaEnvelope className="text-[#c0c0c0]" />
               <a
                 href="mailto:yadavahc333@gmail.com"
-                className="hover:text-[#00d9ff] transition-colors"
+                className="hover:text-white transition-colors"
               >
                 yadavahc333@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-2">
-              <FaPhone className="text-[#00d9ff]" />
+              <FaPhone className="text-[#c0c0c0]" />
               <a
                 href="tel:+918904030441"
-                className="hover:text-[#00d9ff] transition-colors"
+                className="hover:text-white transition-colors"
               >
                 +91 8904030441
               </a>
@@ -105,11 +105,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="mt-12"
+            className="mt-8 sm:mt-12"
           >
             <a
               href="#about"
-              className="inline-block px-8 py-3 bg-gradient-to-r from-[#00d9ff] to-[#8b5cf6] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#00d9ff]/50 transition-all duration-300"
+              className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-[#c0c0c0] to-[#e8e8e8] text-[#0a0a0f] font-semibold rounded-lg hover:from-[#e8e8e8] hover:to-white hover:shadow-lg hover:shadow-[#c0c0c0]/30 transition-all duration-300 text-sm sm:text-base"
             >
               Explore My Work
             </a>
